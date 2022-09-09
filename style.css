@@ -1,0 +1,180 @@
+header{
+    background: linear-gradient(orange, pink);
+    box-shadow: 0px 0px 30px 15px #000000;
+    padding: 20px 0;
+   
+}
+
+.Alura1 ul{
+    position: absolute;
+}
+
+.Oracle{
+    position: absolute;
+    right: 50px;
+    top: 9px;
+
+}
+
+textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    text-align: center;
+    resize: none;
+    
+}
+    
+
+body {
+    background-color: #E5E5E5;
+    
+}
+
+
+main{
+    display: flex;
+    margin-left: 250px;
+    margin-bottom: 250px;
+}
+
+.input-texto {
+    border-radius: 15px;
+    width: 600px;
+    height: 300px;
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+.logo-advertencia{
+    display: flex;
+    height: 13px;
+}
+
+.advertencia-texto{
+    margin-top: 0%;
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+.mensaje {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 90px;
+    background-image: url("Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: 210px;
+    background-size: 180px;
+    border-radius: 15px;
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.mensaje::placeholder{
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+}
+
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    left: 200px;
+}
+
+.encriptar {
+    background-color: darkblue;
+    color:white;
+    cursor: pointer;
+    border-radius: 45px;
+    font-weight: bold;
+    font-size: 30px;
+    width: 190px;
+    
+}
+
+.encriptar:hover{
+    background: darkblue;
+    transform: scale(1.2);
+}
+
+
+.desencriptar {
+    margin-left: 30px;
+    cursor: pointer;
+    border-radius: 45px;
+    font-weight: bold;
+    font-size: 25px;
+    width: 190px;
+    background-color: #DEDEDE;
+}
+
+.desencriptar:hover{
+    background: #DEDEDE;
+    transform: scale(1.2);
+}
+
+.copiar{
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+    top: 49px;
+    right: -310px;
+    font-size: 30px;
+    background-color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 45px;
+    width: 190px;
+}
+
+.copiar:hover{
+    background: #FFFFFF;
+    transform: scale(1.2);
+}
+
+
+footer {
+    background-color: darkblue;
+    height: 130px;
+}
+
+.logo-linkedin{
+    display: flex;
+    justify-content: center;
+}
+
+.linkedin{
+    background-color: #E5E5E5;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    box-shadow: inset 0 0 5px black;
+}
+
+.copyright{
+    color:#FFFFFF;
+    font-size: 12px;
+    margin: 20px;
+    text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+    
+    .mensaje{
+        text-align: center;
+    }
+    header{
+        position: static;
+    }
+    .copiar, .desencriptar, .linkedin {
+        width: auto;
+    }
+
+    footer{
+        width: auto;;
+    }
+}

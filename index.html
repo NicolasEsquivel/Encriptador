@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptandor Challenge</title>
+</head>
+
+<body>
+    <header>
+        <div class="Alura1">
+            <a href="https://www.aluracursos.com/" target="_blank"><img src="Logo.png" alt="Logo de Alura con la inicial de la letra a y redirección" ></a>          
+        </div>
+        
+        <div class="Oracle">
+            <a href="https://www.oracle.com/ar/education/oracle-next-education/" target="_blank"><img src="oracle-loguito.png" alt="Logo de Oracle con redirección"></a> 
+        </div>
+    </header>
+
+    <main>
+        
+        <section>
+            <textarea class="input-texto" cols="40" rows="6" placeholder="Ingrese el texto aquí" onkeyup="this.value=this.value.toLowerCase()"></textarea>
+            
+            <br>
+            <br>
+
+            <div class = "logo-advertencia">
+                <img src = "Vector.png" alt="Logo advertencia de minúsculas">
+                <p class="advertencia-texto">Sólo letras minúsculas y sin acentos.</p> 
+            </div>
+
+            <div class="botones">
+                <button class="encriptar" onclick="btnEncriptar()">
+                    Encriptar
+                </button>
+                <button class="desencriptar" onclick="btnDesencriptar()">
+                    Desencriptar
+                </button>
+            </div>
+        </section>
+
+        <section>
+
+            <textarea class="mensaje" cols="18" rows="8" placeholder="Ningún mensaje fue encontrado. Ingresa el texto que desea encriptar/desencriptar" readonly></textarea>
+
+            <div>
+            <button class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="logo-linkedin">
+            <a href="https://www.linkedin.com/in/nicol%C3%A1s-adri%C3%A1n-esquivel-contador-publico/" target="_blank"><img src="linkedin.png" class="linkedin"></a>
+        </div>
+        <p class="copyright">&copy; Copyright Nicolás Esquivel - 2022</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
